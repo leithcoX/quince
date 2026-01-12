@@ -226,8 +226,8 @@
     <!-- /musica -->
     <!-- audio -->
     <audio loop="" id="audio">
-      <source src="invitacion_archivos/deluxe-boda.ogg" type="audio/ogg">
-      <source src="invitacion_archivos/deluxe-boda.mp3" type="audio/mpeg">
+      <!-- <source src="invitacion_archivos/deluxe-boda.ogg" type="audio/ogg"> -->
+      <source src="invitacion_archivos/cancion.mp3" type="audio/mpeg">
       Tu navegador no soporta la reproducción de audio.
     </audio>
     <div>
@@ -247,7 +247,11 @@
           <img class="img-fluid mb-1" src="invitacion_archivos/lila-3.png" width="120px" alt="Imagen">
           <p class="mb-0">Te invito a</p>
           <h2 class="passconf mb-2 section-title text-center text-lila-fuerte">Mi Fiesta</h2>
-          <img src="invitacion_archivos/inicial.jpg" alt="foto" class="img-fluid rounded">
+          <p class="text-black">
+            Hoy queda en el recuerdo mi niñez, pero hoy renazco para vivir el momento más
+            feliz de mi vida: mi adolescencia.
+            <!-- Quisiera que estés junto a mí para que compartamos mis 15 años. -->
+          </p>
         </div>
         <div class="row item mt-md-4" id="agenda">
           <div class="col-12 text-center show-mobile">
@@ -311,121 +315,8 @@
 
     </section>
 
-
-
-    <div
-      style="background: rgb(235, 230, 247); background: linear-gradient(rgba(235, 230, 247,0.5), rgba(240, 240, 240, 1));">
-      <div class="container p-2">
-        <div class="col-md-10 text-center ml-auto mr-auto pt-5 aos-init" data-aos="fade-up" data-aos-delay="">
-          <div class="col-md-6 ml-auto mr-auto"><img class="img-fluid mb-1"
-              src="invitacion_archivos/icon-ornamental-corazon-lila.png" width="120" alt="Imagen"></div>
-          <h2 class="passconf mb-2 section-title text-center text-lila-fuerte">Mi Historia</h2>
-          <p class="text-black">Desde muy pequeña tengo dos grandes
-            pasiones... patinar y los peluditos de cuatro patas, y andando sobre
-            ruedas llegué a mis 15 años. Si hay algo que aprendí, es que es
-            importante celebrar cada momento rodeados de las personas que nos llenan
-            el corazón...</p>
-
-        </div>
-      </div>
-      <style>
-        /* --- ESTILOS DEL CARRUSEL RESPONSIVE --- */
-        .carousel-wrapper {
-          position: relative;
-          width: 100%;
-          /* Un poco más ancho para que se luzcan las 3 fotos */
-          margin: 0 auto;
-          overflow: hidden;
-          padding: 20px 0;
-        }
-
-        .carousel-track {
-          display: flex;
-          gap: 10px;
-          /* Espacio entre fotos */
-          width: 100%;
-          /* Importante: aseguramos que el track ocupe el ancho disponible */
-        }
-
-        .carousel-track img {
-          height: auto;
-          object-fit: cover;
-          border-radius: 8px;
-          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-          /* POR DEFECTO (Escritorio/Tablet): Entran 3 imágenes */
-          /* La fórmula es: (100% del ancho - 2 espacios de 10px) / 3 fotos */
-          flex: 0 0 calc((100% - 20px) / 3);
-          max-width: calc((100% - 20px) / 3);
-        }
-
-        /* --- MEDIA QUERY (Móviles) --- */
-        @media (max-width: 600px) {
-          .carousel-track img {
-            /* Si es menor a 600px, la foto ocupa todo el ancho */
-            flex: 0 0 100%;
-            max-width: 100%;
-          }
-        }
-
-        /* Botones (igual que antes) */
-        .carousel-btn {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          color: rgba(255, 255, 255, 0.7);
-          background: rgba(94, 94, 94, 0.2);
-          border: 2px solid rgba(255, 255, 255, 0.7);
-          width: 40px;
-          height: 40px;
-          border-radius: 50%;
-          cursor: pointer;
-          z-index: 10;
-          font-size: 1.2rem;
-          /* color: var(--color-secondary); */
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: background 0.3s;
-        }
-
-        .carousel-btn:hover {
-          background: rgba(0, 0, 0, 0.7);
-        }
-
-        .btn-prev {
-          left: 10px;
-        }
-
-        .btn-next {
-          right: 10px;
-        }
-      </style>
-
-
-      <div class="carousel-wrapper">
-        <button class="carousel-btn btn-prev" id="btn-prev">
-          <i class="nf nf-fa-chevron_left"></i>
-        </button>
-
-        <div class="carousel-track" id="gallery-track">
-          <img src="invitacion_archivos/foto2.jpg" alt="Foto 2">
-          <img src="invitacion_archivos/foto3.jpg" alt="Foto 3">
-          <img src="invitacion_archivos/foto4.jpg" alt="Foto 4">
-          <img src="invitacion_archivos/foto5.jpg" alt="Foto 5">
-          <img src="invitacion_archivos/foto6.jpg" alt="Foto 6">
-          <img src="invitacion_archivos/foto7.jpg" alt="Foto 7">
-        </div>
-
-        <button class="carousel-btn btn-next" id="btn-next">
-          <i class="nf nf-fa-chevron_right"></i>
-        </button>
-      </div>
-    </div>
-
     <section class="site-section"
-      style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(250, 250, 250, 0.0)), url(../../img/bg-lila-1.jpg); background-color:#fff ; background-position:50% 50%; background-repeat:no-repeat; background-size:cover; position:relative;"
+      style="background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(250, 250, 250, 0.0)), url(invitacion_archivos/bg-lila-1.jpg); background-color:#fff ; background-position:50% 50%; background-repeat:no-repeat; background-size:cover; position:relative;"
       id="rsvp">
       <img class="img-fluid" src="invitacion_archivos/lila-separador-2a.png" width="100%" alt="Imagen"
         style="position: absolute; bottom: 0px; right: auto; left: auto;">
@@ -546,11 +437,11 @@
               <img class="img-fluid mb-2" src="invitacion_archivos/icon-ornamental-dress.png" width="120px" alt="Imagen"
                 style="filter: invert(1);">
             </div>
-            <h2 class="passconf mb-2 section-title text-center text-white">Dress Code</h2>
-            <p class="text-center text-white">Formal y elegante. Por favor no usar blanco.</p>
+            <h2 class="passconf mb-2 section-title text-center text-white">Código de vestimenta</h2>
+            <p class="text-center text-white">Elegante sport</p>
             <div class="col-12 text-center">
-              <button class="btn mb-2 text-uppercase rounded-pill btn-outline-light border-2 btn-small" data-fancybox=""
-                data-src="#dress" data-animation-duration="700" href="javascript:;">Sugerencias</button>
+              <!-- <button class="btn mb-2 text-uppercase rounded-pill btn-outline-light border-2 btn-small" data-fancybox="" -->
+              <!--   data-src="#dress" data-animation-duration="700" href="javascript:;">Sugerencias</button> -->
             </div>
             <!-- referencias dress -->
             <div style="display: none;" id="dress" class="animated-modal p-4">
@@ -589,122 +480,6 @@
         </div>
       </div>
 
-    </section>
-
-    <section class="site-section bg-white" style="background-size:cover; position:relative;" id="itinerario">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md-8 ml-auto mr-auto text-center aos-init" data-aos="fade-up" data-aos-delay="">
-            <img class="img-fluid mb-2" src="invitacion_archivos/icon-ornamental-itinerario-lila.png" width="130px"
-              alt="Imagen">
-            <h2 class="passconf mb-2 section-title text-center text-lila-fuerte">Itinerario</h2>
-          </div>
-        </div>
-        <div class="timeline-container linea-black aos-init" data-aos="fade-up" data-aos-delay="100">
-          <div id="timeline">
-
-            <div class="timeline-item">
-              <div class="timeline-icon text-center p-2 t-lila">
-                <object type="image/png" class="img-fluid" data="invitacion_archivos/timeline-icon-tragos.png"></object>
-              </div>
-              <div class="timeline-content right c-lila">
-                <p class="text-left mb-2">21:00hs</p>
-                <h2 class="text-left">Recepción</h2>
-
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-icon text-center p-2 t-lila">
-                <object type="image/png" class="img-fluid" data="invitacion_archivos/timeline-icon-15.png"></object>
-              </div>
-              <div class="timeline-content c-lila">
-                <p class="text-right mb-2">22:00hs</p>
-                <h2 class="text-right">Entrada de la quinceañera</h2>
-
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-icon text-center p-2 t-lila">
-                <object type="image/png" class="img-fluid" data="invitacion_archivos/timeline-icon-cena.png"></object>
-              </div>
-              <div class="timeline-content right c-lila">
-                <p class="text-left mb-2">23:00hs</p>
-                <h2 class="text-left">Cena</h2>
-
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-icon text-center p-2 t-lila">
-                <object type="image/png" class="img-fluid" data="invitacion_archivos/timeline-icon-disco.png"></object>
-              </div>
-              <div class="timeline-content c-lila">
-                <p class="text-right mb-2">00:00hs</p>
-                <h2 class="text-right">Primer baile</h2>
-
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-icon text-center p-2 t-lila">
-                <object type="image/png" class="img-fluid" data="invitacion_archivos/timeline-icon-torta.png"></object>
-              </div>
-              <div class="timeline-content right c-lila">
-                <p class="text-left mb-2">4:00hs</p>
-                <h2 class="text-left">Brindis</h2>
-
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-icon text-center p-2 t-lila">
-                <object type="image/png" class="img-fluid" data="invitacion_archivos/timeline-icon-baile.png"></object>
-              </div>
-              <div class="timeline-content c-lila">
-                <p class="text-right mb-2">4:30hs</p>
-                <h2 class="text-right">Baile sorpresa</h2>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="site-section" style="background-size:cover; position:relative;background: rgba(235, 230, 247,0.4);"
-      id="testigos">
-      <img class="img-fluid" src="invitacion_archivos/lila-separador-4b.png" width="100%" alt="Imagen"
-        style="position: absolute; top: 0px; right: auto; left: auto;">
-      <img class="img-fluid" src="invitacion_archivos/lila-separador-4a.png" width="100%" alt="Imagen"
-        style="position: absolute; bottom: 0px; right: auto; left: auto;">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-md-8 ml-auto mr-auto text-center aos-init" data-aos="fade-up" data-aos-delay="">
-            <div class="text-center">
-              <img class="img-fluid mb-2" src="invitacion_archivos/icon-ornamental-testigos-lila.png" width="120px"
-                alt="Imagen">
-            </div>
-            <h2 class="passconf mb-2 section-title text-center text-lila-fuerte">Los Padrinos</h2>
-          </div>
-        </div>
-        <div class="col-md-8 ml-auto mr-auto">
-          <div class="row">
-            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 mb-4 mb-lg-3 text-center mr-auto ml-auto aos-init"
-              data-aos="fade-up" data-aos-delay="50">
-              <div class="">
-                <h5 class="text-lila-fuerte">Mario Marcel Avila</h5>
-              </div>
-            </div>
-            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 mb-4 mb-lg-3 text-center mr-auto ml-auto aos-init"
-              data-aos="fade-up" data-aos-delay="150">
-              <div class="">
-                <h5 class="text-lila-fuerte">Marcela Mita Tapia</h5>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="site-section" style="background-size:cover; position:relative;" id="musica">
@@ -751,32 +526,46 @@
         </div>
       </div>
     </section>
-    <img class="img-fluid" src="invitacion_archivos/lila-separador-5.png" width="100%" alt="Imagen">
-    <section class="site-section" style="background-size:cover; position:relative;" id="instagram">
+
+    <section class="site-section" style="background-size:cover; position:relative;background: rgba(235, 230, 247,0.4);"
+      id="testigos">
+      <img class="img-fluid" src="invitacion_archivos/lila-separador-4b.png" width="100%" alt="Imagen"
+        style="position: absolute; top: 0px; right: auto; left: auto;">
+      <img class="img-fluid" src="invitacion_archivos/lila-separador-4a.png" width="100%" alt="Imagen"
+        style="position: absolute; bottom: 0px; right: auto; left: auto;">
       <div class="container">
-        <div class="col-md-8 ml-auto mr-auto mb-4 text-center aos-init" data-aos="fade-up" data-aos-delay="">
-          <div class="text-center">
-            <img class="img-fluid mb-2" src="invitacion_archivos/icon-ornamental-instagram-lila.png" width="130px"
-              alt="Imagen">
+        <div class="row mb-3">
+          <div class="col-md-8 ml-auto mr-auto text-center aos-init" data-aos="fade-up" data-aos-delay="">
+            <div class="text-center">
+              <img class="img-fluid mb-2" src="invitacion_archivos/icon-ornamental-testigos-lila.png" width="120px"
+                alt="Imagen">
+            </div>
+            <h2 class="passconf mb-2 section-title text-center text-lila-fuerte">Los Padrinos</h2>
           </div>
-          <h2 class="passconf mb-2 section-title text-center text-lila-fuerte">Etiqueta tus Fotos</h2>
-          <h6 class="mb-4"><span class="text-white p-1 bg-lila">#15Julieta2026</span></h6>
-          <p class="text-center">¡Preparate para mi fiesta!<br>
-            Etiquetame en Instagram con mi hashtag en tus fotos y videos.</p>
-          <div class="text-center mb-3">
-            <img src="invitacion_archivos/instagram.jpg" alt="foto" class="img-fluid rounded w-75">
-          </div>
-          <div class="text-center">
-            <button href="https://www.instagram.com/explore/tags/15Julieta2026/" target="_blank"
-              class="btn button-lila mb-2 text-uppercase rounded-pill btn-sm">
-              VER FOTOS</button>
+        </div>
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="row">
+            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 mb-4 mb-lg-3 text-center mr-auto ml-auto aos-init"
+              data-aos="fade-up" data-aos-delay="50">
+              <div class="">
+                <h5 class="text-lila-fuerte">Mario Marcel Avila</h5>
+              </div>
+            </div>
+            <div class="col-xs-5 col-sm-5 col-md-3 col-lg-3 mb-4 mb-lg-3 text-center mr-auto ml-auto aos-init"
+              data-aos="fade-up" data-aos-delay="150">
+              <div class="">
+                <h5 class="text-lila-fuerte">Marcela Mita Tapia</h5>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- <img class="img-fluid" src="invitacion_archivos/lila-separador-5.png" width="100%" alt="Imagen"> -->
+
     <section class="site-section"
-      style="background-image: linear-gradient(rgba(178, 166, 206, 0.3), rgba(0, 0, 0, 0.2)), url(../../img/bg-lila-2.jpg); background-color:#ebe6f7 ; background-position:50% 45%; background-repeat:no-repeat; background-size:cover; position:relative;">
+      style="background-image: linear-gradient(rgba(178, 166, 206, 0.3), rgba(0, 0, 0, 0.2)), url(invitacion_archivos/bg-lila-2.jpg); background-color:#ebe6f7 ; background-position:50% 45%; background-repeat:no-repeat; background-size:cover; position:relative;">
       <img class="img-fluid" src="invitacion_archivos/lila-separador-2a.png" width="100%" alt="Imagen"
         style="position: absolute; bottom: 0px; right: auto; left: auto;">
       <img class="img-fluid" src="invitacion_archivos/lila-separador-3b.png" width="100%" alt="Imagen"
@@ -792,9 +581,9 @@
             <div class="col-12 text-center">
               <button class="btn button-lila mb-2 text-uppercase rounded-pill btn-sm" data-fancybox=""
                 data-src="#regalo" data-animation-duration="700" href="javascript:;">CUENTA BANCARIA</button>
-              <button class="btn button-lila mb-2 text-uppercase rounded-pill btn-sm" data-fancybox=""
-                data-src="#regalo2" data-animation-duration="700" href="javascript:;">LISTA DE
-                REGALOS</button>
+              <!-- <button class="btn button-lila mb-2 text-uppercase rounded-pill btn-sm" data-fancybox="" -->
+              <!--   data-src="#regalo2" data-animation-duration="700" href="javascript:;">LISTA DE -->
+              <!--   REGALOS</button> -->
             </div>
 
           </div>
@@ -802,28 +591,21 @@
         <!-- ventana cuenta -->
         <div style="display: none;" id="regalo" class="animated-modal p-4">
           <div class="mt-4" data-selectable="true">
-            <div class="mb-5">
-              <p class="text-center h3 mb-0"><i class="text-black nf nf-md-credit_card_settings_outline"
-                  aria-hidden="true"></i></p>
-              <p class="text-center text-black mb-3 font-weight-bolder border-bottom border-dark">Billetera digital</p>
-              <p class="mb-2 font-weight-lighter">Envía el dinero desde el siguiente link</p>
-              <p><a href="" target="_blank" class="btn btn-block mb-4 text-uppercase button-gris">Enviar dinero</a></p>
-            </div>
-            <div class="mb-4">
+            <div class="mb-6">
               <p class="text-center h4 mb-0"><i class="text-black nf nf-fa-bank" aria-hidden="true"></i></p>
               <p class="text-center text-black mb-3 font-weight-bolder border-bottom border-dark">Datos Bancarios</p>
               <ul class="list-unstyled font-weight-bolder">
                 <li>
-                  <p class="mb-1"><span class="font-weight-lighter">CBU/IBAN/CCI/Alias: </span>XXX-XXX-XXX</p>
+                  <p class="mb-1"><span class="font-weight-lighter">CVU: </span>0000003100090021376668</p>
                 </li>
                 <li>
-                  <p class="mb-1"><span class="font-weight-lighter">N° de Cuenta: </span>XXXX-XXXX-XXXX</p>
+                  <p class="mb-1"><span class="font-weight-lighter">Alias: </span>pajaro.mortal.1234</p>
                 </li>
                 <li>
-                  <p class="mb-1"><span class="font-weight-lighter">Titular: </span>Juan Fulano</p>
+                  <p class="mb-1"><span class="font-weight-lighter">Titular: </span>Julieta Naiara Romero Gonzales</p>
                 </li>
                 <li>
-                  <p class="mb-1"><span class="font-weight-lighter">Entidad: </span>Banco del Amor</p>
+                  <p class="mb-1"><span class="font-weight-lighter">Entidad: </span>Mercadopago</p>
                 </li>
               </ul>
             </div>
